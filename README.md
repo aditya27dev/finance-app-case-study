@@ -2,17 +2,11 @@
 
 An iOS app that collects spending from receipt photos, Apple Pay taps, voice notes and manual entry into one ledger with budgets.
 
+Designed and built solo by Aditya Batra, from the iOS app to the AWS backend.
+
 **Status:** Commercial app in pre-launch. Source is private.
 
 This repo explains how the app is built. It holds an architecture overview and a few short code excerpts. It does not contain the app itself.
-
-## Screenshots
-
-Screenshots will be added here.
-
-| Home | Receipt scan | Budgets |
-| :---: | :---: | :---: |
-| _coming soon_ | _coming soon_ | _coming soon_ |
 
 ## Tech stack
 
@@ -22,6 +16,13 @@ Screenshots will be added here.
 - **AI:** LangGraph, LangChain, OpenAI or Anthropic models, LangSmith for tracing
 - **Cloud:** AWS Lambda, EventBridge schedules, KMS, SES, all deployed with SST
 - **Auth:** Better Auth with email one-time codes
+
+## Highlights
+
+- Self-correcting LLM receipt extraction with validation and retries
+- Bank tokens encrypted with AWS KMS, and an encrypted on-device cache
+- An offline Apple Pay queue that replays purchases in order
+- Hexagonal architecture with in-memory test fakes
 
 ## What to look at
 

@@ -16,7 +16,7 @@ flowchart LR
         Intent --- Keychain
     end
 
-    subgraph AWS["AWS, deployed with SST"]
+    subgraph AWS["AWS"]
         Lambda["Hono API on AWS Lambda<br/>Function URL, Node 24, arm64"]
         CronA["Daily job Lambda<br/>recurring expenses"]
         CronB["Daily job Lambda<br/>FX rate refresh"]

@@ -14,7 +14,7 @@ This repo explains how the app is built. It holds an architecture overview and a
 - **API:** TypeScript, Hono, GraphQL (read-only, one endpoint), Zod
 - **Data:** PostgreSQL with Drizzle ORM
 - **AI:** LangGraph, LangChain, OpenAI or Anthropic models, LangSmith for tracing
-- **Cloud:** AWS Lambda, EventBridge schedules, KMS, SES, all deployed with SST
+- **Cloud:** AWS Lambda, EventBridge schedules and KMS, deployed with SST. Amazon SES for email.
 - **Auth:** Better Auth with email one-time codes
 
 ## Highlights
